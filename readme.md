@@ -83,7 +83,7 @@ repositories {
 
 fun RepositoryHandler.fan87Public() {
     maven {
-        name = "rektsky-private"
+        name = "fan87-private"
         url = URI("https://maven.pkg.github.com/fan87/Public-Maven-Repository")
         credentials {
             username = System.getenv("GITHUB_USERNAME")
@@ -131,7 +131,7 @@ publishing {
     }
 }
 
-fun RepositoryHandler.rektskyRepository() { // If you already have this, then you don't have to add it again
+fun RepositoryHandler.fan87Public() { // If you already have this, then you don't have to add it again
     maven {
         name = "fan87-public"
         url = URI("https://maven.pkg.github.com/fan87/Pubic-Maven-Repository")
